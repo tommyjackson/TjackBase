@@ -1,0 +1,22 @@
+plugins {
+    id 'java-library'
+    id 'kotlin'
+}
+
+apply from: "$rootDir/gradle/kotlin-lib.gradle"
+apply from: "$rootDir/gradle/dependencies.gradle"
+
+dependencies {
+    // core
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlinVersion"
+
+    // moshi
+    implementation "com.squareup.moshi:moshi-kotlin:$moshiVersion"
+
+    // retrofit
+    implementation "com.squareup.retrofit2:retrofit:$retrofitVersion"
+    implementation "com.squareup.retrofit2:converter-moshi:$retrofitMoshiVersion"
+
+    // rx
+    implementation "io.reactivex.rxjava3:rxjava:$rxJavaVersion"
+}

@@ -8,13 +8,13 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.viewbinding.ViewBinding
-import timber.log.Timber
+//import timber.log.Timber
 import javax.inject.Inject
 
 abstract class BaseFragment<VS, A : Any, VM : BaseViewModel<VS, A>, VB : ViewBinding> : Fragment() {
 
-    @Inject
-    lateinit var timber: Timber.Tree
+//    @Inject
+//    lateinit var timber: Timber.Tree
 
     private var _binding: ViewBinding? = null
 

@@ -1,0 +1,15 @@
+plugins {
+    id 'java-library'
+    id 'kotlin'
+}
+
+apply from: "$rootDir/gradle/kotlin-lib.gradle"
+apply from: "$rootDir/gradle/dependencies.gradle"\
+
+dependencies {
+    // core
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlinVersion"
+
+    // timber
+    implementation "com.jakewharton.timber:timber:$timberVersion"
+}

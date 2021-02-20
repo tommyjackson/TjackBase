@@ -7,6 +7,10 @@ plugins {
 
 apply from: "$rootDir/gradle/dependencies.gradle"
 
+sourceSets{
+    main.java.srcDirs += 'src/main/kotlin'
+}
+
 android {
     compileSdkVersion androidVersions.targetAndCompileSdkVersion
     buildToolsVersion "30.0.3"
@@ -56,21 +60,11 @@ dependencies {
     implementation "com.google.dagger:hilt-android:$hiltVersion"
     kapt "com.google.dagger:hilt-compiler:$hiltVersion"
 
-    // moshi
-    implementation "com.squareup.moshi:moshi-kotlin:$moshiVersion"
-
-    // retrofit
-    implementation "com.squareup.retrofit2:retrofit:$retrofitVersion"
-    implementation "com.squareup.retrofit2:converter-moshi:$retrofitMoshiVersion"
-
     // rx
     implementation "io.reactivex.rxjava3:rxandroid:$rxAndroidVersion"
     implementation "io.reactivex.rxjava3:rxjava:$rxJavaVersion"
     implementation "io.reactivex.rxjava3:rxkotlin:$rxKotlinVersion"
     implementation "com.jakewharton.rxrelay3:rxrelay:$rxRelayVersion"
-
-    // timber
-    implementation "com.jakewharton.timber:timber:$timberVersion"
 
     // core test
     testImplementation "junit:junit:$junitVersion"
