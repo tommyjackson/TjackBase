@@ -21,6 +21,9 @@ ext {
     // core
     materialVersion = "1.3.0"
 
+    // dagger
+    daggerVersion = "2.32"
+
     // moshi
     moshiVersion = "1.11.0"
 

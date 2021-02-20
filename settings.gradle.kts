@@ -1,5 +1,4 @@
-include(":logging")
-include(":app", ":networking")
+include(":app", ":logging", ":networking", ":sample-api")
 rootProject.name = "TjackBase"
 
 rootProject.children.forEach { subProject ->

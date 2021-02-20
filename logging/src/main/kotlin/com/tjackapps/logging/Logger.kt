@@ -1,4 +1,7 @@
 package com.tjackapps.logging
 
-class Logger {
+import timber.log.Timber
+import javax.inject.Inject
+
+class Logger @Inject constructor(val timber: Timber.Tree) {
 }
