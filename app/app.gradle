@@ -21,6 +21,8 @@ android {
 }
 
 dependencies {
+    // projects
+    implementation project(":logging")
 
     // core
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlinVersion"

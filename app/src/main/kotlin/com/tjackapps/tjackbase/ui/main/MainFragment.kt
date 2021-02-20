@@ -1,12 +1,16 @@
 package com.tjackapps.tjackbase.ui.main
 
+import android.os.Bundle
+import android.view.View
 import androidx.lifecycle.Observer
+import com.tjackapps.logging.Logger
 import com.tjackapps.tjackbase.databinding.MainFragmentBinding
 import com.tjackapps.tjackbase.ui.base.BaseFragment
 import com.tjackapps.tjackbase.ui.base.BaseFragmentParams
 import com.tjackapps.tjackbase.ui.main.MainViewModel.Action
 import com.tjackapps.tjackbase.ui.main.MainViewModel.ViewState
 import dagger.hilt.android.AndroidEntryPoint
+import javax.inject.Inject
 
 @AndroidEntryPoint
 class MainFragment : BaseFragment<ViewState, Action, MainViewModel, MainFragmentBinding>() {
@@ -14,6 +18,9 @@ class MainFragment : BaseFragment<ViewState, Action, MainViewModel, MainFragment
     companion object {
         fun newInstance() = MainFragment()
     }
+
+    @Inject
+    lateinit var logger: Logger
 
     override fun getFragmentParams() = BaseFragmentParams(
         viewModelStoreOwner = this,
@@ -27,5 +34,11 @@ class MainFragment : BaseFragment<ViewState, Action, MainViewModel, MainFragment
                 // do something
             }
         }
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        logger.log("OnViewCreated")
     }
 }
