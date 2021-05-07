@@ -1,4 +1,4 @@
-package com.tjackapps.tjackbase.ui.base
+package com.tjackapps.base
 
 import android.os.Bundle
 import android.view.LayoutInflater

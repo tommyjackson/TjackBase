@@ -1,8 +1,0 @@
-apply from: "$rootDir/gradle/kotlin-lib.gradle"
-apply from: "$rootDir/gradle/dependencies.gradle"
-
-dependencies {
-    // core
-    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlinVersion"
-    implementation project(":networking")
-}

@@ -1,6 +1,0 @@
-apply plugin: "java-library"
-apply from: "$rootDir/gradle/dependencies.gradle"
-
-sourceSets{
-    main.java.srcDirs += 'src/main/kotlin'
-}

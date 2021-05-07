@@ -2,9 +2,9 @@ package com.tjackapps.tjackbase.ui.main
 
 import android.os.Bundle
 import android.view.LayoutInflater
+import com.tjackapps.base.BaseActivity
 import com.tjackapps.tjackbase.R
 import com.tjackapps.tjackbase.databinding.MainActivityBinding
-import com.tjackapps.tjackbase.ui.base.BaseActivity
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
