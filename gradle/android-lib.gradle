@@ -1,27 +1,17 @@
+apply plugin: "com.android.library"
+apply plugin: "kotlin-android"
+apply plugin: "kotlin-kapt"
 apply from: "$rootDir/gradle/dependencies.gradle"
 
 android {
-    compileSdkVersion androidVersions.targetAndCompileSdkVersion
-    buildToolsVersion "30.0.3"
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
 
     buildFeatures {
         viewBinding true
     }
-    buildTypes {
-        release {
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro"
-        }
-    }
-    compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
-    }
-    kotlinOptions {
-        jvmTarget = "1.8"
-    }
 }
 
-sourceSets{
-    main.java.srcDirs += 'src/main/kotlin'
+sourceSets {
+    main.java.srcDirs += "src/main/kotlin"
 }
