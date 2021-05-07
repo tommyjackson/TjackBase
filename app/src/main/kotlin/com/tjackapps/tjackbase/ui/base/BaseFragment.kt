@@ -1,5 +1,6 @@
 package com.tjackapps.tjackbase.ui.base
 
+import android.content.Context
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -39,8 +40,8 @@ abstract class BaseFragment<VS, A : Any, VM : BaseViewModel<VS, A>, VB : ViewBin
         return requireNotNull(_binding).root
     }
 
-    override fun onActivityCreated(savedInstanceState: Bundle?) {
-        super.onActivityCreated(savedInstanceState)
+    override fun onAttach(context: Context) {
+        super.onAttach(context)
 
         viewModel = ViewModelProvider(params.viewModelStoreOwner ?: this)
             .get(params.viewModelClass)

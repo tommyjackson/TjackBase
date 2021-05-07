@@ -1,7 +1,5 @@
-java {
-    sourceCompatibility = JavaVersion.VERSION_1_7
-    targetCompatibility = JavaVersion.VERSION_1_7
-}
+apply plugin: "java-library"
+apply from: "$rootDir/gradle/dependencies.gradle"
 
 sourceSets{
     main.java.srcDirs += 'src/main/kotlin'

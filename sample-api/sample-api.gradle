@@ -1,8 +1,3 @@
-plugins {
-    id 'java-library'
-    id 'kotlin'
-}
-
 apply from: "$rootDir/gradle/kotlin-lib.gradle"
 apply from: "$rootDir/gradle/dependencies.gradle"
 

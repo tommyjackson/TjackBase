@@ -32,9 +32,6 @@
         <module name="TjackBase.networking" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel target="1.7">
-      <module name="TjackBase.app" target="1.8" />
-      <module name="TjackBase.logging" target="1.8" />
-    </bytecodeTargetLevel>
+    <bytecodeTargetLevel target="11" />
   </component>
 </project>

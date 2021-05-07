@@ -1,24 +1,5 @@
-plugins {
-    id "com.android.application"
-    id "kotlin-android"
-    id "kotlin-kapt"
-    id "dagger.hilt.android.plugin"
-}
-
-apply from: "$rootDir/gradle/android-lib.gradle"
-apply from: "$rootDir/gradle/dependencies.gradle"
-
-android {
-    defaultConfig {
-        applicationId "com.tjackapps.tjackbase"
-        minSdkVersion androidVersions.minSdkVersion
-        targetSdkVersion androidVersions.targetAndCompileSdkVersion
-        versionCode 1
-        versionName "1.0"
-
-        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
-    }
-}
+apply from: "$rootDir/gradle/application.gradle"
+apply plugin: "dagger.hilt.android.plugin"
 
 dependencies {
     // projects
