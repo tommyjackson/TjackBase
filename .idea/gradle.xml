@@ -14,7 +14,12 @@
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/base" />
             <option value="$PROJECT_DIR$/buildSrc" />
+            <option value="$PROJECT_DIR$/devdrawer" />
+            <option value="$PROJECT_DIR$/feature-one" />
+            <option value="$PROJECT_DIR$/feature-three" />
+            <option value="$PROJECT_DIR$/feature-two" />
             <option value="$PROJECT_DIR$/logging" />
+            <option value="$PROJECT_DIR$/navigation" />
             <option value="$PROJECT_DIR$/networking" />
             <option value="$PROJECT_DIR$/sample-api" />
           </set>

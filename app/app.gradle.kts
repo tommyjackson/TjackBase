@@ -34,6 +34,9 @@ dependencies {
     // projects
     implementation(project(":base"))
     implementation(project(":logging"))
+    implementation(project(":networking"))
+    implementation(project(":sample-api"))
+    implementation(project(":devdrawer"))
 
     // core
     implementation(Libraries.kotlinStdLib)

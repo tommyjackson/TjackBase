@@ -5,7 +5,7 @@ const val buildToolsVersion = "30.0.2"
 object BuildPlugins {
 
     object Versions {
-        const val gradlePluginVersion = "4.2.0"
+        const val gradlePluginVersion = "4.2.1"
         const val hiltPluginVersion = "2.35"
     }
 
@@ -40,20 +40,20 @@ object Libraries {
         const val timber = "4.7.1"
     }
 
-    const val kotlinStdLib     = "org.jetbrains.kotlin:kotlin-stdlib:$kotlinVersion"
-    const val appCompat        = "androidx.appcompat:appcompat:${Versions.jetpack}"
+    const val kotlinStdLib = "org.jetbrains.kotlin:kotlin-stdlib:$kotlinVersion"
+    const val appCompat = "androidx.appcompat:appcompat:${Versions.jetpack}"
     const val constraintLayout = "androidx.constraintlayout:constraintlayout:${Versions.constraintLayout}"
-    const val ktxCore          = "androidx.core:core-ktx:${Versions.ktx}"
-    const val fragmentKtx          = "androidx.fragment:fragment-ktx:${Versions.ktx}"
-    const val hilt             = "com.google.dagger:hilt-android:${Versions.hilt}"
-    const val hiltCompiler         = "com.google.dagger:hilt-compiler:${Versions.hilt}"
-    const val material             = "com.google.android.material:material:${Versions.material}"
-    const val viewModel             = "androidx.lifecycle:lifecycle-viewmodel-ktx:${Versions.lifecycle}"
-    const val lifecycleCompiler             = "androidx.lifecycle:lifecycle-compiler:${Versions.lifecycle}"
-    const val moshi             = "com.squareup.moshi:moshi-kotlin:${Versions.moshi}"
-    const val retrofit             = "com.squareup.retrofit2:retrofit:${Versions.retrofit}"
-    const val retrofitMoshiConverter             = "com.squareup.retrofit2:converter-moshi:${Versions.retrofitMoshiConverter}"
-    const val timber             = "com.jakewharton.timber:timber:${Versions.timber}"
+    const val ktxCore = "androidx.core:core-ktx:${Versions.ktx}"
+    const val fragmentKtx = "androidx.fragment:fragment-ktx:${Versions.ktx}"
+    const val hilt = "com.google.dagger:hilt-android:${Versions.hilt}"
+    const val hiltCompiler = "com.google.dagger:hilt-compiler:${Versions.hilt}"
+    const val material = "com.google.android.material:material:${Versions.material}"
+    const val viewModel = "androidx.lifecycle:lifecycle-viewmodel-ktx:${Versions.lifecycle}"
+    const val lifecycleCompiler = "androidx.lifecycle:lifecycle-compiler:${Versions.lifecycle}"
+    const val moshi = "com.squareup.moshi:moshi-kotlin:${Versions.moshi}"
+    const val retrofit = "com.squareup.retrofit2:retrofit:${Versions.retrofit}"
+    const val retrofitMoshiConverter = "com.squareup.retrofit2:converter-moshi:${Versions.retrofitMoshiConverter}"
+    const val timber = "com.jakewharton.timber:timber:${Versions.timber}"
 }
 
 object TestLibraries {

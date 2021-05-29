@@ -19,6 +19,7 @@ dependencies {
 
     // androidx
     implementation(Libraries.ktxCore)
+    implementation(Libraries.fragmentKtx)
     implementation(Libraries.appCompat)
 
     // hilt
